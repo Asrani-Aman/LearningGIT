@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+<script type="text/javascript">
+
+var Aman = {English:65 , Hindi:88 , Maths:97 , SST:23 , Sanskrit:47 , Science:75};
+
+                                       
+									  //  <!-- AMAN -->
+
+var am_en = Aman.English;
+
+var am_hi = Aman.Hindi;
+
+var am_mi = Aman.Maths;
+
+var am_ss = Aman.SST;
+
+var am_sc = Aman.Science;
+
+var am_sa = Aman.Sanskrit;
+  
+                                  // Aman English
+if(am_en<33){
+  document.write(am_en+"F"+"&nbsp;");
+}
+else if((am_en>32) && (am_en<36)){
+  document.write(am_en+"G");
+}
+else if(am_en>80){
+  document.write(am_en+"D"+"&nbsp;");
+}
+else{
+  document.write(am_en+"P");
+}
+document.write('<br>');
+
+                                    // Aman Hindi
+if(am_hi<33){
+  document.write(am_hi+"F"+"&nbsp;");
+}
+else if((am_hi>32) && (am_hi<36)){
+  document.write(am_hi+"G");
+}
+else if(am_hi>80){
+  document.write(am_hi+"D"+"&nbsp;");
+}
+else{
+  document.write(am_hi+"P");
+}
+
+                                //  Aman Maths
+
+document.write("<br>");
+if(am_mi<33){
+  document.write(am_mi+"F"+"&nbsp;");
+}
+else if((am_mi>32) && (am_mi<36)){
+  document.write(am_mi+"G"+"&nbsp;");
+}
+else if(am_mi>80){
+  document.write(am_mi+"D"+"&nbsp;");
+}
+else{
+  document.write(am_mi+"p");
+}
+
+                                // Aman SST
+                     
+document.write('<br>');
+if(am_ss<33){
+  document.write(am_ss+"F"+"&nbsp;");
+}
+else if((am_ss>32) && (am_ss<36)){
+  document.write(am_ss+"G"+"&nbsp;");
+}
+else if(am_ss>80){
+  document.write(am_ss+"D"+"&nbsp;");
+}
+else{
+  document.write(am_ss+"p");
+}
+
+                                //  Aman Science
+
+document.write("<br>");
+if(am_sc<33){
+  document.write(am_sc+"F"+"&nbsp;");
+}
+else if((am_sc>32) && (am_sc<36)){
+  document.write(am_sc+"G"+"&nbsp;");
+}
+else if(am_sc>80){
+  document.write(am_sc+"D"+"&nbsb;");
+}
+else{
+  document.write(am_sc+"P");
+}
+   
+                                // // Aman Sanskrit
+       
+document.write('<br>');
+if(am_sa<33){
+  document.write(am_sa+"F"+"&nbsp;");
+}
+else if((am_sa>32) && (am_sa<36)){
+  document.write(am_sa+"G"+"&nbsp;");
+}
+else if(am_hi>80){
+  document.write(am_sa+"D"+"&nbsp;");
+}
+else{
+  document.write(am_sa+"p");
+}
+
+function per(a){
+  return (a_en+a_hi+a_mi+a_ss+a_sc+a_sa)/6
+}
+document.getElementById("demo").innerHTML= per(am);
+</script>
+<p id="demo"></p>
+
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

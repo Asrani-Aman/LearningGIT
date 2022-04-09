@@ -1,0 +1,144 @@
+.logo{
+    width:100px;
+}
+.google{
+    width: 100%
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    /* margin-top: 90px; */
+    color: blue;
+    text-shadow: 2px 2px 5px red;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #d5d2d2;
+    border-radius: 10px;
+    width: 800px;
+    padding: 25px;
+    height: 550px;
+}
+h3{
+    position: relative;
+    margin: -5px 0 0 7px;
+    font-size: 23px;
+    font-family: jost;
+    letter-spacing: 1px;
+}
+input{
+    border: 1px solid #d5d2d2;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+}
+input:focus{
+    border: 1.5px solid #0e46fd;
+}
+.name{
+    display: inline-block;
+}
+input[type="name"]{
+    display: block;
+    margin: 30px o o 10px;
+}
+input[type="username"]{
+    display: block;
+    margin: 10px o o 10px;
+    width: 420px;
+}
+.gmail{
+    position: relative;
+    display: block;
+    top: -60px;
+    left: 325px;
+    font-family: roboto;
+    color: #555;
+    font-size: 17px;
+    cursor: default;
+}
+a{
+    display: block;
+    position: relative;
+    font-family: roboto;
+    text-decoration: none;
+}
+.line1{
+    font-size: 14px;
+    color:#555;
+    position: absolute;
+    top:210px;
+    left: 40px;
+    
+}
+.line2{
+    color: #1144ed;
+    font-size: 15px;
+    margin: auto;
+}
+.line3{
+    font-size: 14px;
+    width: 330px;
+    color: #555;
+    position: absolute;
+    top: 360px;
+    margin: auto;
+}
+.line4{
+    font-size: 19px;
+    margin: 40px 8px;
+    color: #4971f6;
+    /* display: inline-block; */
+    font-family: arial rounded mt;
+}
+.pass{
+    display: inline-block;
+    margin-top: 30px;
+}
+input[type="Password"]{
+    display: block;
+}
+a{
+    display: block;
+}
+label{
+    position: relative;
+    top: -28px;
+    left:20px;
+    font-family: roboto;
+    font-size: 17px;
+    color: #555;
+    pointer-events: none;
+}
+input[type="submit"]{
+    background: #0e46fd;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    padding: 7px 20px;
+    display: inline-block;
+    
+    position: absolute;
+    top: 418px;
+    left: 330px;
+}
+input:focus ~label,
+input:valid ~ label{
+  top: -49px;
+  left: 15px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 10px;
+  color: #1f52f9;
+}
+.side-image{
+    position: absolute;
+    top:30px;
+    left:450px;
+
+}
